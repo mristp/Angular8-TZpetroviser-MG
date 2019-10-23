@@ -1,0 +1,16 @@
+<div class="locContainer">
+  <span id="title">Press Specialist's markers on the map</span>
+  <button class="specButton s1" (click)="popup1.appear(335,591)"><img src="/assets/spec1_239x432.png"></button>
+  <button class="specButton s2" (click)="popup2.appear(934,464)"><img src="/assets/spec2_838x304.png"></button>
+  <button class="specButton s3" (click)="popup3.appear(1300,534)"><img src="/assets/spec3_1204y375.png"></button>
+
+  <app-popup #popup1 [specName]="'Petrov V.V'">
+    Geofizik 1st cat.
+  </app-popup>
+  <app-popup #popup2 [specName]="'Vasilev K.A'">
+    Geofizik 2nd cat.
+  </app-popup>
+  <app-popup #popup3 [specName]="'Egorov L.V'">
+    Geolog 2nd cat.
+  </app-popup>
+</div>

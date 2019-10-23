@@ -1,0 +1,21 @@
+<table class="daytable">
+
+    <ng-container *ngFor="let record of phonecallHistory; let i=index">
+        <!-- DateNumber tr -->
+        <tr *ngIf="i === 0 || compareItemDates(phonecallHistory[i-1], record)">
+            <th>{{record.timeStamp | date: 'd LLL'}}</th> <th></th><th></th><th></th><th></th><th></th>
+        </tr>
+        
+        <!--Object tr, polniy farsh-->
+        <tr>
+                <td class="ava"></td>
+                <td><div class="id">{{record.lastName}} {{record.firsName}}</div>
+                    <div class="job">{{record.jobPosition}}</div></td>
+                <td [ngClass]="record.ctype == 'outcall' ? 'out': 'in'"></td>
+                <td><div class="time">{{record.timeStamp | date: 'HH:mm'}}</div>
+                    <div class="duratio">{{record.duration}} sec.</div></td>
+                <td class="call"></td>
+                <td class="video"></td>
+        </tr>
+    </ng-container>
+</table>

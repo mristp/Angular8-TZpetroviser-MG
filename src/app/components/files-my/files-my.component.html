@@ -1,0 +1,8 @@
+<table class="mystable">
+    <tr><th>&darr; Nazvanie</th><th>Razmer</th><th>Data</th></tr>
+    <tr *ngFor="let my of mysFiles">
+        <td id="fname">{{my.fileName}}</td>
+        <td style="text-align: right;">{{my.fileSize}}</td>
+        <td>{{my.fileDate | date: 'dd.MM.yyyy &nbsp;HH:mm:ss'}}</td>
+    </tr>
+</table>

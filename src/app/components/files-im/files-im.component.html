@@ -1,0 +1,8 @@
+<table class="IMstable">
+    <tr><th>&darr; Nazvanie</th><th>Razmer</th><th>Data</th></tr>
+    <tr *ngFor="let im of imsFiles">
+        <td id="fname">{{im.fileName}}</td>
+        <td style="text-align: right;">{{im.fileSize}}</td>
+        <td>{{im.fileDate | date: 'dd.MM.yyyy &nbsp;HH:mm:ss'}}</td>
+    </tr>
+</table>

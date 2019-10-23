@@ -1,0 +1,23 @@
+
+<div id="mainb">
+
+<div class="filemenu">
+  <button
+    [ngClass]="selectedButton == 'FilesMyComponent' ? 'selected': 'notselected'"  
+    (click)="assignComponent('FilesMyComponent')">My files</button>
+  <button
+    [ngClass]="selectedButton == 'FilesCommonComponent' ? 'selected': 'notselected'"
+    (click)="assignComponent('FilesCommonComponent')">Common files</button>
+  <button
+    [ngClass]="selectedButton == 'FilesIMComponent' ? 'selected': 'notselected'"
+    (click)="assignComponent('FilesIMComponent')">IM</button>
+  <button
+    [ngClass]="selectedButton == 'FilesLogsComponent' ? 'selected': 'notselected'"
+    (click)="assignComponent('FilesLogsComponent')">Logs</button>
+</div>
+
+<div class="insertedcomponent">
+  <ng-container *ngComponentOutlet="filedetail"></ng-container>
+</div>
+
+</div>

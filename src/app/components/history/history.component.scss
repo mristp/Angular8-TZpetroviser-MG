@@ -1,0 +1,76 @@
+
+.daytable {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 1400px;
+    overflow: scroll; //scroll esli mnogo zapisei
+    tr {
+        
+        border-bottom: 0 ;
+        //background-color: #ff5556;
+    }
+    th {        
+        height: 35px;        
+        padding-left: 35px; //35px
+        background-color: #706262;
+        text-align: left;
+        color: #e8e8e8;
+        font-size: 18px;
+    }
+    td {
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #463e3c;
+        background-color: #847c7a;
+        padding: 18px;
+    }
+    td.ava {
+      width: 90px;
+      height: 70px;      
+      background: #847c7a url("/assets/big_icon_person.png") no-repeat center; // <img src="/assets/big_icon_person.png" style="opacity: .5;">      
+    }
+    td.out {
+      padding-right: 100px;
+      background: #847c7a url("/assets/big_icon_phone_outcall.png") no-repeat center;
+    }
+    td.in {
+      padding-right: 100px;
+      background: #847c7a url("/assets/big_icon_phone_incall.png") no-repeat center;
+    }
+    td.call {
+      width: 50px;
+      //height: 90px;      
+      background: #847c7a url("/assets/big_icon_phone.png") no-repeat center;
+      margin-left: 100px;
+    }
+    td.video {
+      width: 50px;
+      //height: 90px;      
+      background: #847c7a url("/assets/big_icon_camera.png") no-repeat center; // <img src="/assets/big_icon_person.png" style="opacity: .5;">      
+    }
+    div.time {
+      color: #e7e3e2;
+      font-size: 20px;
+      text-align: left;      
+    }
+    div.duratio {
+      color: #cfc9c9;
+      font-size: 14px;
+      text-align: center;
+    }
+    div.id {
+      width: 400px;
+      margin: 0;
+      padding: 0;
+      color: #e8eae9;
+      font-size: 21px;
+      text-align: left;
+    }
+    div.job {
+      color: #ced0cd;
+      font-size: 12px;
+      text-align: left;
+    }
+    
+} // daytable

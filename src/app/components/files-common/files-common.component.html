@@ -1,0 +1,8 @@
+<table class="commonstable">
+    <tr><th>&darr; Nazvanie</th><th>Razmer</th><th>Data</th></tr>
+    <tr *ngFor="let common of commonsFiles">
+        <td id="fname">{{common.fileName}}</td>
+        <td style="text-align: right;">{{common.fileSize}}</td>
+        <td>{{common.fileDate | date: 'dd.MM.yyyy &nbsp;HH:mm:ss'}}</td>
+    </tr>
+</table>

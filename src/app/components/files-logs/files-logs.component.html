@@ -1,0 +1,8 @@
+<table class="logstable">
+    <tr><th>&darr; Nazvanie</th><th>Razmer</th><th>Data</th></tr>
+    <tr *ngFor="let log of logsFiles">
+        <td id="fname">{{log.fileName}}</td>
+        <td style="text-align: right;">{{log.fileSize}}</td>
+        <td>{{log.fileDate | date: 'dd.MM.yyyy &nbsp;HH:mm:ss'}}</td>
+    </tr>
+</table>

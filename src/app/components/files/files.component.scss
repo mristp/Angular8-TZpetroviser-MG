@@ -1,0 +1,50 @@
+#mainb {
+    background-color: #5e5556;
+    width: 1200px;
+}
+
+.filemenu {
+    display: inline-block;
+    min-width: 200px;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    background: #29211f;
+    padding: 0px;
+    //border: 10px solid #5f5657;
+    vertical-align: top;
+}
+
+.selected {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: #756969;
+    color: #e4e0df;
+    outline: none;
+    margin-bottom: 1px;
+    border:none;
+    cursor: pointer;
+}
+.notselected {
+    display: block;
+    width: 100%;
+    height: 70px;
+    background-color: #89817f;
+    color: #e7e3e2;
+    outline: none;
+    margin-bottom: 1px;
+    border:none;
+    cursor: pointer;
+}
+
+
+.mainmenu-bottom {
+    background-color: #716b6b;
+}
+
+.insertedcomponent {
+    display: inline-block;
+    vertical-align: top;
+}

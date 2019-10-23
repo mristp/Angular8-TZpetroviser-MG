@@ -1,0 +1,78 @@
+.regcont {
+  background : #ccc url(/assets/340f0917c38a3b8ea9b509a9417bluranddark.jpg);
+  margin: 0 auto;
+  padding-top: 11rem;
+  height: 1080px;
+  //align-items: center; //pochemu eta hernya nikogda ne pashet kak nado?
+
+  #title {
+    text-align: center;
+    margin-bottom: 47px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #fffbeb;
+  }
+
+  .reginput {
+    width: 334px;
+    height: 54px;
+    margin: 0 auto;
+    align-self: center;
+    font-size: large;
+    color: rgba(248,247,235,1);
+    text-align: left;
+    padding-left: 20px;
+
+
+    background-color:rgba(255, 255, 255, 0.2);
+    border: 0px solid #989697;
+    display: flex;
+    align-items: center; //vertikalnoe ===
+    justify-content: center;
+    outline: none; //obvodku off
+    margin-bottom: -5px;
+
+    
+
+  }
+
+}
+
+img {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;  
+  margin-bottom: 47px;
+}
+
+.regbutton {
+
+  font-size: large;
+  margin: 0 auto;
+  margin-top: 26px;
+  width: 356px;
+  height: 56px;
+  color: #f7fae7;
+  background: #c4b905;
+  border: 1px solid #989697;
+  display: flex;
+  
+  justify-content: center;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+#deadlinks {
+  width: 350px;
+  height: 56px;
+  align-self: center;
+  
+  margin: 0 auto;
+  
+  p {
+    color: #fffbe9;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}

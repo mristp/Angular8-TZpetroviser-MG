@@ -1,0 +1,41 @@
+
+<body>
+
+<div id="headerdiv">
+  <img src="/assets/LOGO78.png" alt="OKO LOGO" id="headerlogo" routerLink="/rega">
+  <p id="headertitle">СУПЕР-ОКО</p>
+  <div id="rightmenu">
+    <img src="/assets/headericon_search.png" alt="" routerLink="/rega">
+    <img src="/assets/headericon_add.png" alt="" routerLink="/rega">
+    <img src="/assets/headericon_menu.png" alt="" routerLink="/rega">
+    <p id="headeruser">Иванов И.И</p>
+    <img src="/assets/headericon_info.png" alt="" routerLink="/rega">
+    <img src="/assets/headericon_support.png" alt="" routerLink="/rega">
+
+  </div>
+</div>
+
+<div class="mainmenu">
+  <span id="mainmenu-top"><img src="/assets/doublearrow.png" alt=">>"></span>
+  <button
+  [ngClass]="selectedButton == 'HistoryComponent' ? 'selected': 'notselected'"
+  (click)="assignComponent('HistoryComponent')">
+  <img src="/assets/icons_time.png" alt="History" class="buttonimage"></button>
+  <button
+  [ngClass]="selectedButton == 'FilesComponent' ? 'selected': 'notselected'"
+  (click)="assignComponent('FilesComponent')">
+  <img src="/assets/icons_folder.png" alt="Files" class="buttonimage"></button>
+  <button
+  [ngClass]="selectedButton == 'LocationComponent' ? 'selected': 'notselected'"
+  (click)="assignComponent('LocationComponent')">
+  <img src="/assets/icons_location.png" alt="Location" class="buttonimage"></button>
+
+</div>
+
+
+<div class="insertedcomponent">
+  <ng-container *ngComponentOutlet="detailsComponent"></ng-container>
+</div>
+
+
+</body>
